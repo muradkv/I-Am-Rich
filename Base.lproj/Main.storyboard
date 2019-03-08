@@ -18,19 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I Am Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf7-ag-d6Q">
-                                <rect key="frame" x="108" y="100" width="160" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf7-ag-d6Q">
+                                <rect key="frame" x="108.5" y="100" width="158.5" height="47.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="T3x-Jm-DY9">
-                                <rect key="frame" x="53" y="250" width="270" height="270"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="T3x-Jm-DY9">
+                                <rect key="frame" x="52.5" y="250" width="270" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="FZa-JU-YBg"/>
+                                    <constraint firstAttribute="height" constant="251" id="NhO-AM-s43"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T3x-Jm-DY9" firstAttribute="top" secondItem="Rf7-ag-d6Q" secondAttribute="bottom" constant="102.5" id="eIO-Cw-0oO"/>
+                            <constraint firstItem="T3x-Jm-DY9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fam-Ol-ArY"/>
+                            <constraint firstItem="Rf7-ag-d6Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="wsn-KM-pxS"/>
+                            <constraint firstItem="Rf7-ag-d6Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zJD-9Z-YkU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
